@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,7 @@
 }
 
 .topo img {
-    height: 600px;
+    height: 550px;
     width: 100%;
 }
 
@@ -20,12 +19,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    background: rgb(192, 192, 192);
+    padding-bottom: 300px;
+    margin-top:-20px;
 }
 
 .comunication-content h1 {
     font-family: var(--font-roboto);
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-top: 3em;
     text-align: center;
 }
@@ -35,16 +37,30 @@
     font-family: var(--font-roboto);
     font-size: 1em;
     text-decoration: none;
-    line-height: 1.5rem;
+    line-height: 2.5em; 
+    cursor:pointer;
+    background: grey;
+    padding: 15px;
+    border-radius: 8px;
+    list-style: none;
+    text-transform: none;
+    display:block;
+    margin-bottom: 5px;
 }
 
 .comunication-content li {
-    line-height: 2.5em;
-    cursor:pointer;
+    list-style: none;
 }
 
-.comunication-content li:hover {
-    background: grey;
+.comunication-content ul {
+    margin-top: 3em; 
 }
+
+.comunication-content a:hover {
+    color: white;
+    background: black;
+}
+
+
 
 
