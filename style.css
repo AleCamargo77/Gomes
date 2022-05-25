@@ -10,8 +10,39 @@
     --font-roboto: 'Roboto', sans-serif;
 }
 
+header {
+    background: black;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.menu-bar a {
+    color: white;
+    font-family: var(--font-roboto);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-bar a:hover {
+    color: grey;
+}
+
+.menu-bar li {
+    list-style: none;
+}
+
+.menu-bar {
+    display: flex;
+    gap: 30px;
+}
+
 .topo img {
-    height: 550px;
+    height: 150px;
     width: 100%;
 }
 
@@ -21,8 +52,8 @@
     justify-content: center;
     align-items: center; 
     background: rgb(192, 192, 192);
-    padding-bottom: 300px;
-    margin-top:-20px;
+    padding-bottom: 100px;
+
 }
 
 .comunication-content h1 {
@@ -30,6 +61,7 @@
     font-size: 2.5em;
     margin-top: 3em;
     text-align: center;
+    padding-top: 100px;
 }
 
 .comunication-content a {
@@ -59,6 +91,62 @@
 .comunication-content a:hover {
     color: white;
     background: black;
+}
+
+.calculator-container h1 {
+    font-family: var(--font-roboto);
+    font-size: 2.5em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.calculator-container p {
+    font-family: var(--font-roboto);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.calculator-info label {
+    font-family: var(--font-roboto);
+    margin-top: 15px;
+}
+
+.calculator-info input {
+    padding: 8px;
+}
+
+.calculator-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#btn-calc {
+    padding: 10px 60px;
+    background: grey;
+    color: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: none;
+    font-weight: bold; 
+    margin-bottom: 100px;
+    cursor: pointer;
+} 
+
+#btn-calc:hover {
+    background: black;
+    color: white;
+}
+
+.calculator-info span {
+    margin-bottom: 200px;
+    font-family: var(--font-roboto);
+    text-decoration: underline;
+    background: black;
+    padding: 10px 50px;
+    color:tomato;
 }
 
 

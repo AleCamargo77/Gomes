@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
     <title>Lojas Gomes</title>
 </head>
 <body>
-    <header>
+    <header class="header-container">
         <div class="topo">
             <img src="./images/Logo Gomes preto.jpg" alt="Logo Gomes">
         </div>
+        <nav class="menu-bar">
+            <li><a href="#">Comunicação Interna</a></li>
+            <li><a href="#">Calculadora Frete</a></li>
+        </nav>
     </header>
     <section class="comunication-container">
         <div class="comunication-content">
@@ -23,6 +28,20 @@
             <li><a href="./Documents/CIRCULAR DESCONTO PARA CLIENTES.pdf">Desconto para clientes</a></li>
             <li><a href="./Documents/CIRCULAR DEFEITOS E PEÇAS ANTIGAS.pdf">Defeito e peças antigas</a></li>
             </ul>
+        </div>
+    </section>
+    <section>
+        <div class="calculator-container">
+            <h1>Calculadora de Fretes</h1>
+            <p>Kimar</p>
+        <div class="calculator-info">
+            <label for="number">Informe o valor da nota fiscal:</label>
+            <input id="valor" type="number" placeholder="Digite aqui o valor" >
+            <label for="number">Informe o peso:</label>
+            <input id="peso" type="number" placeholder="Digite aqui o peso" >
+            <button onclick="calcularfrete()" id="btn-calc">Calcular</button>
+            <span id="result"></span>
+        </div>
         </div>
     </section>
 </body>
