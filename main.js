@@ -1,19 +1,29 @@
 function calcularfrete() {
-    const valor = parseFloat(document.getElementById('valor').value).toFixed(2);
-    const peso = parseFloat(document.getElementById('peso').value);
+    const valor = Number(document.getElementById('valor').value).toFixed(2);
+    const peso = Number(document.getElementById('peso').value);
 
-    despacho = 10.15
-    pedagio = 3.93
-    frete = classification(peso)
-    fretevalor = (valor * 0.23) / 100
-    gris = (valor * 0.17) / 100
-    imposto = (despacho + pedagio + frete + fretevalor + gris) * 13.65 /100
+    var despacho = Number.parseFloat("10.15")
+    var pedagio = Number.parseFloat(pedag(peso)) 
+    var frete = Number.parseFloat(classification(peso))
+    var fretevalor = Number(valor * 0.23) / 100
+    var gris = parseFloat(valor * 0.17) / 100
+    var imposto = parseFloat(despacho + pedagio + frete + fretevalor + gris) * 13.65 /100
 
     let isValid = validatecalculo(valor, peso);
 
     if (isValid == true) {
-        const result = ( frete + despacho + pedagio + fretevalor + gris + imposto).toFixed(2);
-        document.getElementById('result').innerHTML = `O valor do frete é de R$ ${result}`;
+        const result = Number(frete + despacho + pedagio + fretevalor + gris + imposto).toFixed(2);
+        document.getElementById('result').innerHTML = `O valor do frete é de R$ ${result}
+        Despacho é ${despacho}, pedágio é ${pedagio}, frete é ${frete}, o fretevalor é ${fretevalor}, o gris é ${gris}, o imposto é ${imposto}.`
+    }
+}
+
+function pedag(peso) {
+        if (peso <= 100){
+        return pedagio = 3.93;
+    }
+    else if (peso > 100){
+        return pedagio = 7.86;
     }
 }
 

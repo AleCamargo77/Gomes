@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
 }
 
 .menu-bar a {
@@ -46,52 +46,56 @@ header {
     width: 100%;
 }
 
+.comunication-container {
+    background: rgb(192, 192, 192);
+    padding-bottom: 100px; 
+    padding-top: 5px;
+}
+
 .comunication-content {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    background: rgb(192, 192, 192);
-    padding-bottom: 100px;
+    gap: 1em;
+    padding-top: 3em;
 
 }
 
-.comunication-content h1 {
+.comunication-container h1 {
     font-family: var(--font-roboto);
-    font-size: 2.5em;
-    margin-top: 3em;
+    font-size: 2.5em; 
+    margin-top: 2em;
     text-align: center;
-    padding-top: 100px;
 }
 
-.comunication-content a {
-    color: black;
+.bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.bloco li {
+    list-style: none;
+}  
+
+.bloco a {
+    display: flex;
     font-family: var(--font-roboto);
     font-size: 1em;
-    text-decoration: none;
-    line-height: 2.5em; 
     cursor:pointer;
-    background: grey;
-    padding: 15px;
+    padding: 15px; 
+    align-items: center;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    width: 300px;
+    height: 35px;
     border-radius: 8px;
-    list-style: none;
-    text-transform: none;
-    display:block;
-    margin-bottom: 5px;
-}
-
-.comunication-content li {
-    list-style: none;
-}
-
-.comunication-content ul {
-    margin-top: 3em; 
+    background: grey;
 }
 
 .comunication-content a:hover {
     color: white;
     background: black;
-}
+} 
 
 .calculator-container h1 {
     font-family: var(--font-roboto);
