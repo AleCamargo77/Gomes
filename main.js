@@ -13,8 +13,8 @@ function calcularfrete() {
 
     if (isValid == true) {
         const result = Number(frete + despacho + pedagio + fretevalor + gris + imposto).toFixed(2);
-        document.getElementById('result').innerHTML = `O valor do frete é de R$ ${result}
-        Despacho é ${despacho}, pedágio é ${pedagio}, frete é ${frete}, o fretevalor é ${fretevalor}, o gris é ${gris}, o imposto é ${imposto}.`
+        document.getElementById('result').innerHTML = `O valor do frete é de \u{1F449} R$ ${result}`
+        // Despacho é ${despacho}, pedágio é ${pedagio}, frete é ${frete}, o fretevalor é ${fretevalor}, o gris é ${gris}, o imposto é ${imposto}.
     }
 }
 
@@ -32,7 +32,6 @@ function validatecalculo(valor, peso) {
         alert('Preencha os campos obrigatórios para efetuar o cálculo');
         return false;
     }
-
     return true;
 }
 
@@ -50,17 +49,16 @@ function classification(peso) {
         return frete = 39.77;
     }
     else if (peso >80 && peso <=100) {
-         return frete = 42.39;
+        return frete = 42.39;
     }
-    else if (peso >100 && peso <=120){
+    else if (peso >100 && peso <=120) {
         return frete = 45.07;
     }
-    else if (peso >120 && peso <= 150){
+    else if (peso >120 && peso <= 150) {
         return frete = 56.38;
     }
     else if (peso >150){
         return frete = 75.17;
     }
-
 }
 
