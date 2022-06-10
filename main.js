@@ -62,3 +62,8 @@ function classification(peso) {
     }
 }
 
+function clearValues() {
+    valor.value = "";
+    peso.value = "";
+    result.innerHTML = "";
+}

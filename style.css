@@ -64,6 +64,7 @@ header {
     font-size: 2.5em; 
     margin-top: 2em;
     text-align: center;
+    text-shadow: 5px 5px 10px;
 }
 
 .bloco {
@@ -114,6 +115,7 @@ header {
     font-size: 2.5em;
     margin-top: 2em;
     text-align: center;
+    text-shadow: 5px 5px 10px;
 }
 
 .calculator-container p {
@@ -151,8 +153,7 @@ header {
     border: none;
     font-weight: bold; 
     margin-bottom: 50px;
-    cursor: pointer;
-    
+    cursor: pointer; 
 } 
 
 #btn-calc:hover {
@@ -160,11 +161,34 @@ header {
     color: white;
 }
 
+#btn-clear {
+    background: grey;
+    color: black;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 10px 30px;
+}
+
+#btn-clear:hover {
+    background: black;
+    color: white;
+}
+
+.footer-content {
+    background: black;
+    font-family: var(--font-roboto);
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+
 .calculator-info span {
     margin-bottom: 50px;
     font-family: var(--font-roboto);
-    /* text-decoration: underline; */
-    /* background: grey; */
     padding: 10px 50px;
     color:white;
     border-radius: 8px;
