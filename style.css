@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed; 
+    position: fixed;
 }
 
 .menu-bar a {
@@ -48,7 +48,7 @@ header {
 
 .comunication-container {
     background: rgb(192, 192, 192);
-    padding-bottom: 3em; 
+    padding-bottom: 3em;
     padding-top: 6em;
 }
 
@@ -61,7 +61,7 @@ header {
 
 .comunication-container h1 {
     font-family: var(--font-roboto);
-    font-size: 2.5em; 
+    font-size: 2.5em;
     margin-top: 2em;
     text-align: center;
     text-shadow: 5px 5px 10px;
@@ -75,14 +75,14 @@ header {
 
 .bloco li {
     list-style: none;
-}  
+}
 
 .bloco a {
     display: flex;
     font-family: var(--font-roboto);
     font-size: 1em;
     cursor:pointer;
-    padding: 15px; 
+    padding: 15px;
     align-items: center;
     list-style: none;
     color: white;
@@ -96,7 +96,7 @@ header {
 .comunication-content a:hover {
     color: white;
     background: black;
-} 
+}
 
 .calculator-container {
     background: rgb(4,116,128);
@@ -108,7 +108,7 @@ header {
     margin-bottom: 100px;
     box-shadow: 5px 5px 10px;
     border-radius: 10px;
-    
+
 }
 .calculator-container h1 {
     font-family: var(--font-roboto);
@@ -151,10 +151,10 @@ header {
     text-transform: uppercase;
     margin-top: 20px;
     border: none;
-    font-weight: bold; 
+    font-weight: bold;
     margin-bottom: 50px;
-    cursor: pointer; 
-} 
+    cursor: pointer;
+}
 
 #btn-calc:hover {
     background: black;
@@ -177,11 +177,15 @@ header {
 }
 
 .footer-content {
+    height: 5em;
     background: black;
     font-family: var(--font-roboto);
     color: #fff;
     font-size: .8em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 

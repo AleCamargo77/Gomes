@@ -1,15 +1,15 @@
-function calcularfrete() {
-    const valor = Number(document.getElementById('valor').value).toFixed(2);
+function calcShipping() {
+    const valor = Number(document.getElementById('valor').value);
     const peso = Number(document.getElementById('peso').value);
 
     var despacho = Number.parseFloat("10.15")
-    var pedagio = Number.parseFloat(pedag(peso)) 
+    var pedagio = Number.parseFloat(pedag(peso))
     var frete = Number.parseFloat(classification(peso))
     var fretevalor = Number(valor * 0.23) / 100
     var gris = parseFloat(valor * 0.17) / 100
-    var imposto = parseFloat(despacho + pedagio + frete + fretevalor + gris) * 13.65 /100
+    var imposto = parseFloat(despacho + pedagio + frete + fretevalor + gris) * 13.65 / 100
 
-    let isValid = validatecalculo(valor, peso);
+    let isValid = validateCalc(valor, peso);
 
     if (isValid == true) {
         const result = Number(frete + despacho + pedagio + fretevalor + gris + imposto).toFixed(2);
@@ -19,15 +19,15 @@ function calcularfrete() {
 }
 
 function pedag(peso) {
-        if (peso <= 100){
+    if (peso <= 100) {
         return pedagio = 3.93;
     }
-    else if (peso > 100){
+    else if (peso > 100) {
         return pedagio = 7.86;
     }
 }
 
-function validatecalculo(valor, peso) {
+function validateCalc(valor, peso) {
     if (!valor || !peso) {
         alert('Preencha os campos obrigatórios para efetuar o cálculo');
         return false;
@@ -36,28 +36,28 @@ function validatecalculo(valor, peso) {
 }
 
 function classification(peso) {
-    if (peso <= 20){
+    if (peso <= 20) {
         return frete = 25.74;
     }
-    else if (peso >20 && peso <=40) {
+    else if (peso > 20 && peso <= 40) {
         return frete = 32.02;
     }
-    else if (peso >40 && peso <=60) {
+    else if (peso > 40 && peso <= 60) {
         return frete = 33.96;
     }
-    else if (peso >60 && peso <=80) {
+    else if (peso > 60 && peso <= 80) {
         return frete = 39.77;
     }
-    else if (peso >80 && peso <=100) {
+    else if (peso > 80 && peso <= 100) {
         return frete = 42.39;
     }
-    else if (peso >100 && peso <=120) {
+    else if (peso > 100 && peso <= 120) {
         return frete = 45.07;
     }
-    else if (peso >120 && peso <= 150) {
+    else if (peso > 120 && peso <= 150) {
         return frete = 56.38;
     }
-    else if (peso >150){
+    else if (peso > 150) {
         return frete = 75.17;
     }
 }
@@ -67,3 +67,15 @@ function clearValues() {
     peso.value = "";
     result.innerHTML = "";
 }
+
+// function clicar() {
+//     const nameTexto = document.getElementById('name-txt').value;
+//     const emailTexto = document.getElementById('email-txt').value;
+   
+
+//     let isValida = valida(nameTexto, emailTexto);
+//     if (isValida == true){
+//         console.log(nameTexto.length + 1)
+//     //  document.getElementById('res').innerHTML = `Seu nome é ${nameTexto} e o seu email é ${emailTexto}`;
+// }
+// }

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
-    
+    <script defer src="./main.js"></script>  
     <title>Lojas Gomes</title>
 </head>
 <body>
     <header class="header-container">
         <div class="topo">
-            <img src="./images/Logo Gomes preto.jpg" alt="Logo Gomes">
+            <a href="http://127.0.0.1:5501/index.html"><img src="./images/Logo Gomes preto.jpg" alt="Logo Gomes"></a>
         </div>
         <nav class="menu-bar">
             <li>
@@ -77,20 +77,17 @@
             <input id="valor" type="number" placeholder="Digite aqui o valor em R$" >
             <label for="number">Informe o peso:</label>
             <input id="peso" type="number" placeholder="Digite aqui o peso em Kg" >
-            <button onclick="calcularfrete()" id="btn-calc">Calcular</button>
+            <button onclick="calcShipping()" id="btn-calc">Calcular</button>
             <button onclick="clearValues()" id="btn-clear">Limpar</button>
             <span id="result"></span>
         </div>
         </div>
     </section>
-    <script src="./main.js"></script>
-
     <footer>
         <div class="footer-content">
-            <p>Desenvolvido por Alessandro Camargo</p>
+            <p>Desenvolvido por <strong>Alessandro Camargo</strong></p>
             <p>© Copyright 2022</p>
         </div>
-
     </footer>
 </body>
 </html>
