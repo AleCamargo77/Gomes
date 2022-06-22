@@ -31,6 +31,9 @@ function validateCalc(valor, peso) {
     if (!valor || !peso) {
         alert('Preencha os campos obrigatórios para efetuar o cálculo');
         return false;
+    }else if(valor < 0 || peso < 0){
+        alert('Insira um valor válido');
+        return false;
     }
     return true;
 }
@@ -68,14 +71,3 @@ function clearValues() {
     result.innerHTML = "";
 }
 
-// function clicar() {
-//     const nameTexto = document.getElementById('name-txt').value;
-//     const emailTexto = document.getElementById('email-txt').value;
-   
-
-//     let isValida = valida(nameTexto, emailTexto);
-//     if (isValida == true){
-//         console.log(nameTexto.length + 1)
-//     //  document.getElementById('res').innerHTML = `Seu nome é ${nameTexto} e o seu email é ${emailTexto}`;
-// }
-// }
