@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,79 +8,90 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
     <link rel="shortcut icon" href="./images/favIconNew.png" type="image/x-icon" />
-    <script defer src="./main.js"></script>  
+    <script defer src="./main.js"></script>
     <title>Lojas Gomes</title>
 </head>
+
 <body>
-    <header class="header-container">
-        <div class="topo">
-            <a href="./index.html"><img src="./images/Logo Gomes preto.jpg" alt="Logo Gomes"></a>
-        </div>
-        <nav class="menu-bar">
-            <li>
-                <a href="#ComunicacaoInterna">Comunicação Interna</a>
-            </li>
-            <li>
-                <a href="#CalcFrete">Calculadora Frete</a>
-            </li>
+    <header id="header" class="header-container">
+        <a id="logo" href="./index.html"><img src="./images/favIconNew.png"></a>
+        <nav class="nav" id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">Menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#ComunicacaoInterna">Comunicação Interna</a>
+                </li>
+                <li>
+                    <a href="#CalcFrete">Calculadora Frete</a>
+                </li>
+            </ul>
         </nav>
     </header>
+
+
     <section id="ComunicacaoInterna" class="comunication-container">
         <h1>Comunicação Interna</h1>
         <div class="comunication-content">
-            
+
             <div class="bloco">
-            <li>
-                <a href="./Documents/CIRCULAR VALE PRESENTE GRUPO GOMES.pdf">Vale Presente Grupo Gomes</a>
-            </li>
-            <li>
-                <a href="./Documents/CIRCULAR 2022 COMPRA DE FUNCINARIO LEVIS E ELLUS.pdf">Compras de Funcionários Exclusivas</a>
-            </li>
-            <li>
-                <a href="./Documents/CIRCULAR 2022 NORMAS PARA COMPRAS DE FUNCIONÁRIOS GOMES.pdf">Compras de Funcionários Gomes</a>
-            </li>
-            <li>
-                <a href="./Documents/CIRCULAR DESCONTO PARA CLIENTES.pdf">Desconto para clientes</a>
-            </li>
-            <li>
-                <a href="./Documents/CIRCULAR DEFEITOS E PEÇAS ANTIGAS.pdf">Defeito e peças antigas</a>
-            </li>
-            
-        </div>
-        <div class="bloco">
-            
-            <li>
-                <a href="./Documents/CIRCULAR ANIVERSARIANTE DO MÊS.pdf">Aniversariante do Mês</a>
-            </li>
-            <li>
-                <a href="./Documents/_Link Pagto - MAXIMO 900 REAIS.pdf">Link de Pagamento</a>
-            </li>
-            <li>
-                <a href="./Documents/CAMPANHA 50 DAS MARCAS of.pdf">Campanha 50 das marcas Off</a>
-            </li>
-            <li>
-                <a href="./Documents/DNA GOMES.pdf">DNA Gomes</a>
-            </li>
-            <li>
-                <a href="./Documents/LGPD.pdf">Cartilha LGPD</a>
-            </li>
-        
-        </div>
+                <li>
+                    <a href="./Documents/CIRCULAR VALE PRESENTE GRUPO GOMES.pdf">Vale Presente Grupo Gomes</a>
+                </li>
+                <li>
+                    <a href="./Documents/CIRCULAR 2022 COMPRA DE FUNCINARIO LEVIS E ELLUS.pdf">Compras de Funcionários
+                        Exclusivas</a>
+                </li>
+                <li>
+                    <a href="./Documents/CIRCULAR 2022 NORMAS PARA COMPRAS DE FUNCIONÁRIOS GOMES.pdf">Compras de
+                        Funcionários Gomes</a>
+                </li>
+                <li>
+                    <a href="./Documents/CIRCULAR DESCONTO PARA CLIENTES.pdf">Desconto para clientes</a>
+                </li>
+                <li>
+                    <a href="./Documents/CIRCULAR DEFEITOS E PEÇAS ANTIGAS.pdf">Defeito e peças antigas</a>
+                </li>
+
+            </div>
+            <div class="bloco">
+
+                <li>
+                    <a href="./Documents/CIRCULAR ANIVERSARIANTE DO MÊS.pdf">Aniversariante do Mês</a>
+                </li>
+                <li>
+                    <a href="./Documents/_Link Pagto - MAXIMO 900 REAIS.pdf">Link de Pagamento</a>
+                </li>
+                <li>
+                    <a href="./Documents/CAMPANHA 50 DAS MARCAS of.pdf">Campanha 50 das marcas Off</a>
+                </li>
+                <li>
+                    <a href="./Documents/DNA GOMES.pdf">DNA Gomes</a>
+                </li>
+                <li>
+                    <a href="./Documents/LGPD.pdf">Cartilha LGPD</a>
+                </li>
+            </div>
         </div>
     </section>
     <section>
         <div id="CalcFrete" class="calculator-container">
             <h1>Calculadora de Fretes</h1>
             <p>Kimar</p>
-        <div class="calculator-info">
-            <label for="number">Informe o valor da nota fiscal:</label>
-            <input id="valor" type="number" placeholder="Digite aqui o valor em R$" >
-            <label for="number">Informe o peso:</label>
-            <input id="peso" type="number" placeholder="Digite aqui o peso em Kg" >
-            <button onclick="calcShipping()" id="btn-calc">Calcular</button>
-            <button onclick="clearValues()" id="btn-clear">Limpar</button>
-            <span id="result"></span>
-        </div>
+            <div class="calculator-info">
+                <label for="number">Informe o valor da nota fiscal:</label>
+                <input id="valor" type="number" placeholder="Digite aqui o valor em R$">
+                <label for="number">Informe o peso:</label>
+                <input id="peso" type="number" placeholder="Digite aqui o peso em Kg">
+                <button onclick="calcShipping()" id="btn-calc">Calcular</button>
+                <button onclick="clearValues()" id="btn-clear">Limpar</button>
+                <span id="result"></span>
+            </div>
         </div>
     </section>
     <footer>
@@ -89,4 +101,3 @@
     </footer>
 </body>
 </html>
-

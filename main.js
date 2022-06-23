@@ -14,7 +14,6 @@ function calcShipping() {
     if (isValid == true) {
         const result = Number(frete + despacho + pedagio + fretevalor + gris + imposto).toFixed(2);
         document.getElementById('result').innerHTML = `O valor do frete é de \u{1F449} R$ ${result}`
-        // Despacho é ${despacho}, pedágio é ${pedagio}, frete é ${frete}, o fretevalor é ${fretevalor}, o gris é ${gris}, o imposto é ${imposto}.
     }
 }
 
@@ -71,3 +70,21 @@ function clearValues() {
     result.innerHTML = "";
 }
 
+
+const btnMobile = document.getElementById('btn-mobile');
+
+function toggleMenu(event) {
+  if (event.type === 'touchstart') event.preventDefault();
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+  const active = nav.classList.contains('active');
+  event.currentTarget.setAttribute('aria-expanded', active);
+  if (active) {
+    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+  } else {
+    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+  }
+}
+
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);

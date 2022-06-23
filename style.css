@@ -10,17 +10,55 @@
     --font-roboto: 'Roboto', sans-serif;
 }
 
-header {
-    background: black;
-    height: 150px;
-    width: 100%;
+a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  a:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  #logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  } 
+  
+  #header {
+    box-sizing: border-box;
+    height: 120px;
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    position: fixed;
-}
+    justify-content: space-between;
+    background: #000;
+    position:fixed;
+    width: 100%;
+  }
+  
+  #menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+  }
+  
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+  }
+  
+  #btn-mobile {
+    display: none;
+    color: white;
+  }
 
-.menu-bar a {
+.header-container img {
+    height: 3em;
+    width: 5em;
+}  
+
+.nav a {
     color: white;
     font-family: var(--font-roboto);
     list-style: none;
@@ -28,28 +66,25 @@ header {
     text-decoration: none;
 }
 
-.menu-bar a:hover {
+.nav a:hover {
     color: grey;
 }
 
-.menu-bar li {
+.nav li {
     list-style: none;
-}
-
-.menu-bar {
     display: flex;
-    gap: 30px;
 }
 
-.topo img {
-    height: 150px;
-    width: 100%;
-}
+.nav {
+    display: flex; 
+    gap: 30px;
+} 
+
 
 .comunication-container {
     background: rgb(192, 192, 192);
     padding-bottom: 3em;
-    padding-top: 6em;
+    padding-top: 4em;
 }
 
 .comunication-content {
