@@ -88,3 +88,8 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+const year = document.getElementById('year');
+const yearCurrent = new Date();
+
+year.innerHTML = yearCurrent.getFullYear();
