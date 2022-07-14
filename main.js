@@ -89,6 +89,24 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
+function upButton(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+}
+
+function showHideButton() {
+    if (window.scrollY === 0){
+        document.querySelector('.upbutton').style.display = 'none';
+    }else {
+        document.querySelector('.upbutton').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', showHideButton);
+
 const year = document.getElementById('year');
 const yearCurrent = new Date();
 
