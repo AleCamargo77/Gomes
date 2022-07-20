@@ -15,11 +15,13 @@
 <body>
     <header id="header" class="header-container">
         <a id="logo" href="./index.html"><img src="./images/favIconNew.png"></a>
+        <div class="clock" id="clockNow">--:--:--</div>
         <nav class="nav" id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
+            
             <ul id="menu" role="menu">
                 <li>
                     <a href="./index.html">Home</a>
@@ -96,7 +98,7 @@
     </section>
     <div onclick="upButton()" class="upbutton"><img src="./images/arrowUp.svg" alt="seta">
     </div>
-    <div class="clock" id="clockNow">--:--:--</div>
+    
     <footer>
         <div class="footer-content">
             <p>© Copyright <span id="year"></span> | Desenvolvido por <strong>Alessandro Camargo</strong></p>

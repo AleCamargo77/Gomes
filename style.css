@@ -246,8 +246,9 @@ a {
 }
 
 .clock {
-    text-align: center;
-    
+    color: #fff;
+    font-family: var(--font-roboto);
+    font-size: 1.5rem; 
   }
 
 

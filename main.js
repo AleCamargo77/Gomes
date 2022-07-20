@@ -115,9 +115,10 @@ year.innerHTML = yearCurrent.getFullYear();
 
 
 function hourNow() {
-let hour = yearCurrent.getHours();
-let minute = yearCurrent.getMinutes();
-let second = yearCurrent.getSeconds();
+let digitalClock = new Date()    
+let hour = digitalClock.getHours();
+let minute = digitalClock.getMinutes();
+let second = digitalClock.getSeconds();
 
 let hours = hour < 10 ? '0'+hour : hour;
 let minutes = minute < 10 ? '0'+minute : minute;
@@ -126,8 +127,7 @@ let seconds = second < 10 ? '0'+second : second;
 document.getElementById('clockNow').innerHTML = `${hours}:${minutes}:${seconds}`;
 }
 
-setInterval(hourNow, 1000)
-
+setInterval(hourNow, 1000);
 
 
 
