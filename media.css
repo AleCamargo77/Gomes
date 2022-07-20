@@ -74,4 +74,9 @@
     transform: rotate(-135deg);
     top: -7px;
   }
+  .upbutton img {
+    left: 90%;
+    height: 30px;
+    width: 30px;
+  }
 }

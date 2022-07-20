@@ -89,7 +89,52 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 
+
+function upButton(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+}
+
+function showHideButton() {
+    if (window.scrollY === 0){
+        document.querySelector('.upbutton').style.display = 'none';
+    }else {
+        document.querySelector('.upbutton').style.display = 'block';
+    }
+}
+
+window.addEventListener('scroll', showHideButton);
+
+
 const year = document.getElementById('year');
 const yearCurrent = new Date();
-
 year.innerHTML = yearCurrent.getFullYear();
+
+
+function hourNow() {
+let hour = yearCurrent.getHours();
+let minute = yearCurrent.getMinutes();
+let second = yearCurrent.getSeconds();
+
+let hours = hour < 10 ? '0'+hour : hour;
+let minutes = minute < 10 ? '0'+minute : minute;
+let seconds = second < 10 ? '0'+second : second;
+
+document.getElementById('clockNow').innerHTML = `${hours}:${minutes}:${seconds}`;
+}
+
+setInterval(hourNow, 1000)
+
+
+
+
+
+
+
+
+
+
+
