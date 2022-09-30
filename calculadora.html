@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link rel="shortcut icon" href="./images/favIconNew.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
+    <script defer src="./main.js"></script>
+    <title>Lojas Gomes</title>
+</head>
+
+<body>
+    <header id="header" class="header-container">
+        <a id="logo" href="./index.html"><img src="./images/favIconNew.png"></a>
+        <div class="clock" id="clockNow">--:--:--</div>
+        <nav class="nav" id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            
+            <ul id="menu" role="menu">
+                <!-- <li>
+                    <a href="./index.html">Home</a>
+                </li>  -->
+                <li>
+                    <a href="./index.html">Comunicação Interna</a>
+                </li>
+                <li>
+                    <a href="./fretes.html">Calculadora Frete</a>
+                </li>
+                <li>
+                    <a href="./calculadora.html">Calculadora</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main data-theme="dark">
+        <header class="flex align-center justify-between">
+          <h1>Calculadora</h1>
+          <div id="theme">
+            <a id="light" href="#"><i class="bi bi-sun"></i></a>
+            <a id="moon" href="#"><i class="bi bi-moon"></i></a>
+          </div>
+        </header>
+        <input type="text" id="input" />
+        <div id="keys">
+          <button id="clear">C</button>
+          <button class="charKey" data-value=" ( ">(</button>
+          <button class="charKey" data-value=" ) ">)</button>
+          <button class="charKey" data-value=" / ">÷</button>
+          <button class="charKey" data-value="7">7</button>
+          <button class="charKey" data-value="8">8</button>
+          <button class="charKey" data-value="9">9</button>
+          <button class="charKey" data-value=" * ">x</button>
+          <button class="charKey" data-value="4">4</button>
+          <button class="charKey" data-value="5">5</button>
+          <button class="charKey" data-value="6">6</button>
+          <button class="charKey" data-value=" - ">-</button>
+          <button class="charKey" data-value="1">1</button>
+          <button class="charKey" data-value="2">2</button>
+          <button class="charKey" data-value="3">3</button>
+          <button class="charKey" data-value=" + ">+</button>
+          <button class="charKey" data-value="0">0</button>
+          <button class="charKey" data-value=".">.</button>
+          <button id="delete" data-value="delete">DEL</button>
+          <button id="equal">=</button>
+        </div>
+        <section class="flex align-center justify-between input-result">
+          <button id="copyToClipboard">Cópia</button>
+          <input type="text" class="active" id="result" disabled />
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+            <p>© Copyright <span id="year"></span> | Desenvolvido por <strong>Alessandro Camargo</strong></p>
+        </div>
+    </footer>
+
+    </body>
