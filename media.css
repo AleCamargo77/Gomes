@@ -18,9 +18,11 @@
     }
     .calculator-container {
       width: auto;
-      height: auto;
+      height: 75vh;
       margin: 10px;
-      margin-bottom: 12rem;
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: center;
     }
     .calculator-info span {
         font-size: 12px;
