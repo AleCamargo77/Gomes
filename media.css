@@ -20,6 +20,7 @@
       width: auto;
       height: auto;
       margin: 10px;
+      margin-bottom: 12rem;
     }
     .calculator-info span {
         font-size: 12px;
@@ -45,18 +46,17 @@
     visibility: hidden;
     overflow-y: hidden;
   }
-  #nav.active #menu {
+#nav.active #menu {
     height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
-  #menu a {
+#menu a {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   }
-
-  #btn-mobile {
+#btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -66,12 +66,12 @@
     gap: 0.5rem;
   }
 
-  #hamburger {
+#hamburger {
     border-top: 2px solid;
     width: 20px;
   }
-  #hamburger::after,
-  #hamburger::before {
+#hamburger::after,
+#hamburger::before {
     content: '';
     display: block;
     width: 20px;
@@ -81,17 +81,17 @@
     transition: 0.3s;
     position: relative;
   }
-  #nav.active #hamburger {
+#nav.active #hamburger {
     border-top-color: transparent;
   }
-  #nav.active #hamburger::before {
+#nav.active #hamburger::before {
     transform: rotate(135deg);
   }
-  #nav.active #hamburger::after {
+#nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
   }
-  .upbutton img {
+.upbutton img {
     left: 90%;
     height: 30px;
     width: 30px;
